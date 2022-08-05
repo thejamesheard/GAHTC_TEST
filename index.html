@@ -96,11 +96,10 @@
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/thejamesheard/cl6gmfzb4000d15n7vlekz1dl', // YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
-      // style: 'mapbox://styles/mapbox/streets-v11' // Default style
       center: [-122.411, 37.785], // starting position [lng, lat]
       zoom: 10,// starting zoom
+      projection: 'globe',
       transformRequest: transformRequest
-      projection: 'naturalEarth'
     });
 
     $(document).ready(function () {
