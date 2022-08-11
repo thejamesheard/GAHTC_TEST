@@ -92,8 +92,7 @@
 </head>
 
 <body>
-	<!--Trying to add filters in HTML, but i guess this is not the right way-->
-	<nav id='filters' class='filter-ui'>Test</nav>
+	<nav id='filters' class='filter-ui'>Filters</nav>
 	<div id='map'></div>
 	<script>
 
@@ -120,8 +119,6 @@
 			transformRequest: transformRequest
 		});
 
-		filters = document.getElementById('filters');
-
 
 		$(document).ready(function () {
 			$.ajax({
@@ -142,7 +139,7 @@
 				}, function (err, data) {
 					map.on('load', function () {
 
-						//Add the the layer to the map
+						//Add the layer to the map
 						map.addLayer({
 							'id': 'csvData',
 							'type': 'circle',
